@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: assignss-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MODEL_NAME
+        value: llama-3.1-8b-instant
+      - key: MAX_CONCURRENT_CALLS
+        value: 10
+      - key: GROQ_API_KEY
+        sync: false

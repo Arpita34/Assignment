@@ -35,8 +35,9 @@ export default function GenerationDashboard() {
 
     addLog(`Starting generation: N=${n}, model from environment variables`, 'info');
 
+    const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
     const es = new EventSource(
-      `http://localhost:8000/api/generate/?survey_id=${surveyId}&n=${n}`,
+      `${baseUrl}/api/generate/?survey_id=${surveyId}&n=${n}`,
     );
     esRef.current = es;
 
@@ -83,7 +84,8 @@ export default function GenerationDashboard() {
 
   const cancelGeneration = async () => {
     if (runId) {
-      await fetch(`http://localhost:8000/api/generate/${runId}`, { method: 'DELETE' });
+      const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      await fetch(`${baseUrl}/api/generate/${runId}`, { method: 'DELETE' });
     }
     esRef.current?.close();
     setState('cancelled');

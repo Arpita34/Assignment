@@ -102,7 +102,8 @@ export default function ResponseExplorer() {
   useEffect(() => { fetchData(); }, [fetchData]);
 
   const handleExport = (format) => {
-    window.open(`http://localhost:8000/api/responses/export?run_id=${runId || ''}&format=${format}`);
+    const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+    window.open(`${baseUrl}/api/responses/export?run_id=${runId || ''}&format=${format}`);
   };
 
   const totalPages = Math.ceil(data.total / LIMIT);
