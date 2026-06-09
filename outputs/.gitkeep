@@ -1,0 +1,8 @@
+# outputs/.gitkeep
+# This directory is created by the pipeline on first run.
+# Generated files:
+#   responses.csv
+#   responses.json
+#   qa_report.png
+#   run_stats.json
+#   run.log

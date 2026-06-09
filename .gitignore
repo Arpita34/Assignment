@@ -1,0 +1,31 @@
+# Environments
+.env
+.env.local
+.venv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Outputs
+outputs/responses.csv
+outputs/responses.json
+outputs/qa_report.png
+outputs/run_stats.json
+
+# IDEs
+.idea/
+.vscode/
+*.swp

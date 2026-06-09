@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "llm: marks tests that call the LLM API (costs money, run separately)",
+    "slow: marks slow tests",
+]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
