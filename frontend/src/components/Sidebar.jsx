@@ -6,14 +6,14 @@ import {
 } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { to: '/',          icon: Settings2,   label: 'Survey Config' },
-  { to: '/generate',  icon: Zap,         label: 'Generate' },
-  { to: '/responses', icon: Table2,      label: 'Responses' },
-  { to: '/analytics', icon: BarChart3,   label: 'Analytics' },
-  { to: '/personas',  icon: Users2,      label: 'Personas' },
-  { to: '/review',    icon: ShieldCheck, label: 'Coherence Review' },
-  { to: '/history',   icon: History,     label: 'Run History' },
-  { to: '/settings',  icon: Settings,    label: 'Settings' },
+  { to: '/', icon: Settings2, label: 'Survey Config' },
+  { to: '/generate', icon: Zap, label: 'Generate' },
+  { to: '/responses', icon: Table2, label: 'Responses' },
+  { to: '/analytics', icon: BarChart3, label: 'Analytics' },
+  { to: '/personas', icon: Users2, label: 'Personas' },
+  { to: '/review', icon: ShieldCheck, label: 'Coherence Review' },
+  { to: '/history', icon: History, label: 'Run History' },
+  { to: '/settings', icon: Settings, label: 'Settings' },
 ];
 
 const ARCHETYPE_COLORS = {
