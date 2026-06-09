@@ -6,7 +6,6 @@ import GenerationDashboard from './pages/GenerationDashboard';
 import ResponseExplorer from './pages/ResponseExplorer';
 import Analytics from './pages/Analytics';
 import PersonaInspector from './pages/PersonaInspector';
-import CoherenceReview from './pages/CoherenceReview';
 import RunHistory from './pages/RunHistory';
 import Settings from './pages/Settings';
 
@@ -22,7 +21,6 @@ export default function App() {
             <Route path="/responses" element={<ResponseExplorer />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/personas" element={<PersonaInspector />} />
-            <Route path="/review" element={<CoherenceReview />} />
             <Route path="/history" element={<RunHistory />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>

@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { to: '/responses', icon: Table2, label: 'Responses' },
   { to: '/analytics', icon: BarChart3, label: 'Analytics' },
   { to: '/personas', icon: Users2, label: 'Personas' },
-  { to: '/review', icon: ShieldCheck, label: 'Coherence Review' },
   { to: '/history', icon: History, label: 'Run History' },
   { to: '/settings', icon: Settings, label: 'Settings' },
 ];
